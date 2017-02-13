@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Time App JSON</title>
+  
+  
+  
+  
+      <style>
+      body{
+  background-color: #e6f2ff;
+  text-align:center;
+  margin: 0px auto 0px auto;
+}
+h1{
+  text-align:center;
+}
+.res{
+  border: solid 1px;
+  width:600px;
+  height: 400px;
+  margin: 50px auto 100px auto;
+  text-align:center;
+}
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <h1>Timestamp Microservice</h1>
+<!--<div class="res"> </div> -->
+<div id="res">Unixtime:<br> 
+  <input name="unixtime" id="form1" type="text"> 
+  <button type="button" onclick="goUnix()">Go !</button>
+</div> <br>
+<div id="res">Iso:<br> 
+  <input name="iso" id="form2" type="text"> 
+  <button type="button">Go !</button> 
+</div>
+  
+  
+    <script>
+    function goUnix(){
+  var input = document.getElementById("form1").value;
+  var url = "https://testenv-tarvela.c9users.io/api?iso="+input;
+  window.location = url;
+}
+function goIso(){
+    var input = document.getElementById("form2").value;
+    var url = "https://testenv-tarvela.c9users.io/api?iso="+input;
+    window.location = url;
+}
+  </script>
+
+  
+  
+
+</body>
+</html>
+ 
