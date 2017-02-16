@@ -2,6 +2,7 @@ var express= require('express');
 var http = require('http');
 var fs = require("fs");
 var url = require('url');
+var port = process.env.PORT || 8080;
 
 
 http.createServer(function(request, response) {
