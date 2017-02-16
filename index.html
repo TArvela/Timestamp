@@ -49,14 +49,16 @@ h1{
   
   
     <script>
+      //website to deploy
+      var website ="pacific-bayou-58672.herokuapp.com";
     function goUnix(){
   var input = document.getElementById("form1").value;
-  var url = "https://testenv-tarvela.c9users.io/api?iso="+input;
+  var url = "https://"+website+"/api?iso="+input;
   window.location = url;
 }
 function goIso(){
     var input = document.getElementById("form2").value;
-    var url = "https://testenv-tarvela.c9users.io/api?iso="+input;
+    var url = "https://"+website+"/api?iso="+input;
     window.location = url;
 }
   </script>
